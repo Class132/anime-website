@@ -1,0 +1,135 @@
+:root { 
+  --clr-main-purple: rgb(102, 53, 180);
+}
+
+body {
+       margin: 0; 
+          padding: 0; 
+          background-color: #d3d5d8;
+          font-family:Verdana, Geneva, Tahoma, sans-serif; 
+          background-image: url(images/background-image.jpg);
+          background-size: 1920px 1080px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(102, 53, 180);
+}
+
+li {
+  float: left;
+  margin-left: 4rem;
+}
+
+/* MENU ELEMENTS */
+li a {
+  display: block;
+  color: white; 
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  opacity: 0.7;
+  background-color: lightpink;
+  transition-duration: 200ms;
+  color: black; 
+  /* cursor: pointer; */
+}
+
+  /* С этого момента залупа */
+  li.dropdown {
+    display: inline-block;
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  .main-content { 
+    display: grid;
+    place-items: center;
+    background-color: azure;
+    justify-items: center;
+    margin-left: 15rem;
+    margin-right: 32rem;
+    background-color: rgb(182, 182, 182);
+}
+
+  .inputname { 
+    background-color: azure; 
+    padding: 15px; 
+    border-radius: 10px; 
+    background-image: url(https://img.freepik.com/free-photo/a-girl-with-pink-hair-and-a-guitar-on-her-shirt_1340-32655.jpg?w=826&t=st=1701949832~exp=1701950432~hmac=f3be7bac8a13e16eb82e7723f230fdd6bc89b34d8ff3835fd3622da9e6398412); 
+    color: white; 
+    background-size: cover; 
+} 
+
+.firstname { 
+    margin-left: 80rem; 
+}
+
+
+.rightcolumn {
+  float: right;
+  width: 25%;
+  background-color: #f1f1f1;
+  border-radius: 7px; 
+
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 80%;
+  padding: 4px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 7px; 
+} 
+
+ul.ul-right-column { 
+  background-color: white; 
+}
+
+li.li-right-column a { 
+  display: block; 
+  padding: 20px 20px 20px 20px;
+  border-radius: 6px;
+  color:black; 
+}
+
+li.li-right-column a:hover { 
+  background-color: var(--clr-main-purple);
+  border-radius: 10px;
+  color:white; 
+}
